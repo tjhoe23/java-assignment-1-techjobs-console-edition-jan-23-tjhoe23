@@ -120,6 +120,26 @@ public class TechJobs {
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
 
-        System.out.println("printJobs is not implemented yet");
+        /*
+        iterate over an ArrayList of jobs.
+        Each job is itself a HashMap.
+        While you can get each of the items out of the HashMap using the known keys (employer, location, etc.),
+        think instead about creating a nested loop to loop over each HashMap.
+        If a new field is added to the job records, this approach will print out the new field without any updates to printJobs.
+         */
+
+        for (HashMap<String, String> jobs: someJobs) {
+            System.out.println("*****");
+            //prints * for every job
+
+            //iterate through another hashmap to actually print the jobs
+            for (HashMap<String, String> ) {
+
+            }
+                System.out.println("*****");
+            System.out.println("\n");
+            //line of * after every job list, and new line
+        }
+        //if there are no results print "No Results"
     }
 }
