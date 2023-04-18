@@ -3,6 +3,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+import static sun.tools.jstat.Alignment.keySet;
+
 /**
  * Created by LaunchCode
  */
@@ -128,13 +130,13 @@ public class TechJobs {
         If a new field is added to the job records, this approach will print out the new field without any updates to printJobs.
          */
 
-        for (HashMap<String, String> jobs: someJobs) {
+        for (HashMap<String, String> jobs : someJobs) {
             System.out.println("*****");
             //prints * for every job
 
             //iterate through another hashmap to actually print the jobs
-            for (HashMap<String, String> ) {
-
+            for (Map.Entry<String, String> entry : jobs.entrySet() ) {
+                System.out.println(jobs.getKey() + ": " + jobs.getValue());
             }
                 System.out.println("*****");
             System.out.println("\n");
