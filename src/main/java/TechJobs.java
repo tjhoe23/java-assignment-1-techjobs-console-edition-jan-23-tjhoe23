@@ -3,8 +3,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-import static sun.tools.jstat.Alignment.keySet;
-
 /**
  * Created by LaunchCode
  */
@@ -135,14 +133,16 @@ public class TechJobs {
             //prints * for every job
 
             //iterate through another hashmap to actually print the jobs
-            for (Map.Entry<String, String> entry : jobs.entrySet() ) {
-                System.out.println(jobs.getKey() + ": " + jobs.getValue());
+            for (Map.Entry<String, String> entry : jobs.entrySet()) {
+                System.out.println(entry.getKey() + ": " + entry.getValue());
             }
-                System.out.println("*****");
+            System.out.println("*****");
             System.out.println("\n");
             //line of * after every job list, and new line
         }
         //if there are no results print "No Results"
+        if (someJobs.isEmpty()) {
+            System.out.println("No Results");
+        }
     }
 }
-
