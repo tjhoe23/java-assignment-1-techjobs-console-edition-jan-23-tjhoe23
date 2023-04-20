@@ -127,22 +127,24 @@ public class TechJobs {
         think instead about creating a nested loop to loop over each HashMap.
         If a new field is added to the job records, this approach will print out the new field without any updates to printJobs.
          */
-
+//        System.out.println("\r\n");
         for (HashMap<String, String> jobs : someJobs) {
-            System.out.println("*****");
+//            System.out.println("\r\n");
+            System.out.println("\r\n*****");
             //prints * for every job
 
             //iterate through another hashmap to actually print the jobs
-            for (Map.Entry<String, String> entry : jobs.entrySet()) {
+            for (HashMap.Entry<String, String> entry : jobs.entrySet()) {
                 System.out.println(entry.getKey() + ": " + entry.getValue());
             }
             System.out.println("*****");
-            System.out.println("\n");
+//            System.out.print("\n");
             //line of * after every job list, and new line
         }
+//        System.out.print("\n");
         //if there are no results print "No Results"
         if (someJobs.isEmpty()) {
-            System.out.println("No Results");
+            System.out.print("No Results");
         }
     }
 }
