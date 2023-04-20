@@ -136,8 +136,8 @@ public class TechJobs {
             for (Map.Entry<String, String> entry : jobs.entrySet()) {
                 System.out.println(entry.getKey() + ": " + entry.getValue());
             }
-            System.out.println("*****");
-            System.out.println("\n");
+            System.out.println("*****\n");
+//            System.out.println("\n");
             //line of * after every job list, and new line
         }
         //if there are no results print "No Results"
