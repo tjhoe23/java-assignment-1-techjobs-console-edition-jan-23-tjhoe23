@@ -104,11 +104,6 @@ public class JobData {
             for (HashMap.Entry<String, String> entry : row.entrySet()) {
                 if (entry.getValue().toUpperCase().contains(value)) {
                     jobs.add(row);
-//                String aValue = entry.getKey();
-//
-//                if (aValue.toUpperCase().contains(value)) {
-//                    jobs.add(row);
-
 
                 }
 
